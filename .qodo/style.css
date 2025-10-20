@@ -1,0 +1,69 @@
+body {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    font-family: 'Helvetica', sans-serif; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+canvas {
+    /* Asegúrate de tener un archivo 'cursor.png' en la carpeta /assets/ */
+    cursor: url('assets/cursor.png'), auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+
+    /* ====== LÍNEAS PARA AGREGAR EL FONDO ====== */
+    /* 1. Asegúrate de tener 'background.jpg' en la carpeta /assets/ */
+    background-image: url('assets/background.jpg');
+
+    /* 2. Hace que la imagen cubra todo el espacio sin deformarse */
+    background-size: cover;
+
+    /* 3. Centra la imagen */
+    background-position: center;
+    /* =========================================== */
+    
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.5);
+}
+
+.game-header, .game-footer {
+    background-color: #111;
+    text-shadow: 2px 2px 5px rgba(255, 100, 0, 0.7);
+}
+
+.game-title-img {
+    max-height: 60px;
+}
+
+.score-board {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    color: #ffae00;
+    border: 2px solid #ffae00;
+}
+
+.instructions {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #ffae00;
+    max-width: 250px;
+    text-align: center;
+}
+
+.game-controls {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
